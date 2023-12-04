@@ -1,24 +1,40 @@
 Development Process Documentation
+
 Overview
+
 The Multiple Choice Quiz App is a Streamlit application that generates a multiple-choice quiz based on a given concept in technical fields. It utilizes the OpenAI language model for question and answer generation.
 
 Key Components
+
 Streamlit: The app framework used for creating the user interface.
+
 OpenAI API: Integration with the OpenAI language model for generating quiz questions and answers.
+
 LangChain Library: Custom library for working with prompts, chains, and chat models.
+
 Development Steps
+
 Initialization: Set up the OpenAI API key and initialize the required libraries.
+
 Prompt Template: Create a template for quiz prompts using the LangChain library.
+
 Quiz Chain: Build a language model chain for generating quiz questions and answers.
+
 User Interface: Develop the Streamlit app with input fields for the concept and the number of questions, buttons to generate and submit the quiz, and radio buttons for user answers.
+
 Session State: Utilize Streamlit's session state to store and manage information across app sessions.
+
 Score Calculation: Calculate and display the user's score based on selected answers.
+
 Correct Answers: Optionally, display correct answers after the quiz submission.
+
 Code Documentation
+
 create_the_quiz_prompt_template()
 Description: Creates a prompt template for the quiz using the LangChain library.
 Parameters: None.
 Returns: The generated prompt template.
+
 create_quiz_chain(prompt_template, llm)
 Description: Creates a language model chain for the quiz app.
 Parameters:
