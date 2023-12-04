@@ -10,8 +10,7 @@ from langchain.chains import LLMChain
 from langchain.chat_models import ChatOpenAI
 import streamlit as st
 
-# Set up OpenAI API key
-openai.api_key = "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"
+
 
 def create_the_quiz_prompt_template():
     """Create the prompt template for the quiz app."""
